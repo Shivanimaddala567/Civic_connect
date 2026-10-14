@@ -1,0 +1,339 @@
+/* =========================================================
+   CIVICCONNECT - MODERN UPGRADED STYLESHEET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================================================
+   LOGIN PAGE
+========================================================= */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    border-radius: 50%;
+    font-size: 36px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.login-card h2 {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.login-tabs {
+    display: flex;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f1f5f9;
+    padding: 4px;
+}
+
+.login-tab {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    color: #64748b;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.login-tab.active {
+    background: #ffffff;
+    color: #2563eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.demo-credentials {
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+.dashboard {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.navbar {
+    padding: 16px 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid #2563eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card i {
+    font-size: 36px;
+    color: #2563eb;
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 28px;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.stat-card.warning { border-left-color: #f59e0b; }
+.stat-card.warning i { color: #f59e0b; }
+.stat-card.success { border-left-color: #10b981; }
+.stat-card.success i { color: #10b981; }
+
+/* =========================================================
+   ADMIN STAT CARDS
+========================================================= */
+.admin-stat-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    border-top: 6px solid #2563eb;
+    transition: transform 0.2s ease;
+}
+
+.admin-stat-card:hover { transform: translateY(-2px); }
+.admin-stat-card i { font-size: 32px; color: #2563eb; }
+.admin-stat-card h2 { margin: 12px 0 4px; font-weight: 700; color: #0f172a; }
+.admin-stat-card p { margin: 0; color: #64748b; font-weight: 500; }
+
+.admin-stat-card.pending { border-top-color: #f59e0b; }
+.admin-stat-card.pending i { color: #f59e0b; }
+.admin-stat-card.progress-card { border-top-color: #06b6d4; }
+.admin-stat-card.progress-card i { color: #06b6d4; }
+.admin-stat-card.resolved { border-top-color: #10b981; }
+.admin-stat-card.resolved i { color: #10b981; }
+
+/* =========================================================
+   CONTENT CARDS
+========================================================= */
+.content-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+.card-header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 15px;
+}
+
+.card-header-custom h4 {
+    margin: 0;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* =========================================================
+   FORMS
+========================================================= */
+.form-label {
+    font-weight: 600;
+    color: #334155;
+    font-size: 14px;
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #0f172a;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================================================
+   PHOTO PREVIEW
+========================================================= */
+#photoPreview img {
+    max-width: 240px;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    padding: 4px;
+    background: #f8fafc;
+}
+
+/* =========================================================
+   TABLES & BADGES
+========================================================= */
+.table { margin-bottom: 0; }
+.table thead th {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 14px;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 14px;
+    vertical-align: middle;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.table tbody tr { transition: background 0.15s ease; }
+.table tbody tr:hover { background: #f8fafc; }
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-submitted { background: #e0f2fe; color: #0369a1; }
+.status-review { background: #fef3c7; color: #92400e; }
+.status-assigned { background: #f1f5f9; color: #475569; }
+.status-progress { background: #cffafe; color: #0e7490; }
+.status-resolved { background: #d1fae5; color: #065f46; }
+
+.priority-high { color: #ef4444; font-weight: 700; }
+.priority-medium { color: #f97316; font-weight: 700; }
+.priority-low { color: #10b981; font-weight: 700; }
+
+.complaint-detail { margin-bottom: 16px; font-size: 15px; }
+.complaint-detail strong { display: inline-block; min-width: 140px; color: #64748b; }
+.complaint-photo {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 18px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline-primary {
+    color: #2563eb;
+    border-color: #cbd5e1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+    .login-card { padding: 30px; }
+    .content-card { padding: 20px; }
+    .stat-card, .admin-stat-card { padding: 18px; }
+}
